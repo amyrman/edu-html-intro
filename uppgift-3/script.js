@@ -17,7 +17,7 @@ function () {
 
 const singleTxt = document.querySelector("#singleTxt");
 
-singleTxt.innerText = "Goodbye World";
+singleTxt.innerText = "Goodbye World!";
 
 }
 );

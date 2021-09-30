@@ -9,6 +9,16 @@ h1 {
 button  {
   margin: 0 auto;
   display: block;
+  color: blue;
+  padding: 8px 32px;
+  border-radius: 6px;
+  background: transparent;
+  border: 2px solid blue;
+
+}
+button:hover  {
+  background-color: rgba(236, 197, 124, 0.89);
+  color: blue;
 }
 .container  {
   margin-top: 10%;
