@@ -1,4 +1,15 @@
 /* Ändra h1:s färg till blå */
+/* Tillägg: Centrera horisontellt, flytta ner från toppen på sidan, ändra typsnitt */
+
 h1 {
   color: blue;
+  text-align: center;
+  font-family: "Georgia";
+}
+button  {
+  margin: 0 auto;
+  display: block;
+}
+.container  {
+  margin-top: 10%;
 }
