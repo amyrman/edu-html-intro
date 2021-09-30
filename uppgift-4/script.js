@@ -2,7 +2,7 @@
 console.log("script.js is loaded!");
 
 // Variabler
-// Deklarera en variabel för att använda till att visa antal uppgifter som är "avbockade"
+// Deklarera en variabel för att använda till att visa antal uppgifter som är klara
 let completedCount = 0;
 
 // Deklarera och hänvisa variabler i JS till HTML-element genom querySelector
@@ -14,33 +14,34 @@ const list = document.querySelector("ul");
 const info = document.querySelector("small");
 const label = document.querySelector("p");
 
-// Skapa en tom array att lagra uppgifterna
+// Skapa en tom array att lagra uppgifterna i
 const myArray = [];
 
 // Vad som händer när vi klickar "OK"
 button.addEventListener("click", function() {
   
   // Hämta text från input
-  // När "text"-variabeln deklareras inom funktionen släpps den även när funktionen är klar
+  // När "text"-variabeln deklareras inom funktionen släpps den även när funktionen är klar, dvs dess scope är inom funktionen
   // Vi skulle ha kunnat deklarera utanför denna funktion som "let text="" och sedan bara text="input.value"
   // Varför använder vi "value"?
   const text = input.value;
 
   // För att köra en check på om input är 0.
   if (text.length == 0) {
-    // En alert (pop-up) är ett alternativ: <alert("Du måste skriva något");>
+    // En alert (pop-up) är ett alternativ: <alert("Du måste skriva något!");>
     // men stör interaktionen till skillnad från
-    document.querySelector("small").innerText = "Input must not be empty";
+    document.querySelector("small").innerText = "Please write something :)";
     return;
   }
   else {
-    // document.querySelector('small').innerText = "";
     info.innerText = "";
   }
+
   // Man kan även använda regexp för att kontrollera om någon skriver in enbart mellanslag.
   // Eller form validation, men behöver kanske "formuläret"/input-funktionerna assignas med <form></form> i HTML först?
 
-  // Lägg till element, punkt (li) + text (span) i listan (ul)
+  // Pusha input till arrayen som vi deklarerade tidigare.
+  // Lägg till element: punkt (li) + text (span) i listan i HTML (ul)
 
   myArray.push(input.value);
 
@@ -60,8 +61,8 @@ button.addEventListener("click", function() {
     item.remove();
   });
 
-  // Lägg till klick på li-elementen i ToDo
-  // Kanske finns toggle-funktion, men nedanstående demonstrerar
+  // Lägg till funktion för klick på li-elementen
+  // Toggle-funktion finns också, men nedanstående demonstrerar
   // att vi kan hämta och sätta nya attribut på HTML-element
   itemLabel.addEventListener("click", function() {
     
