@@ -93,3 +93,11 @@ button.addEventListener("click", function() {
 // Drag and drop mellan olika fält
 
 // Lägga completed för sig vid click
+
+// Ändra list item om en uppgift är klar eller inte? (list-style-type)
+
+// Lägg till en progress bar för att visualisera hur mycket en har kvar
+
+// Länk till GTD eller Eisenhower metoden -- inspiration från bägge
+
+// Inkludera en 25 min timer och länka till pomodoro?
