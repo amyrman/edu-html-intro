@@ -94,10 +94,14 @@ button.addEventListener("click", function() {
 
 // Lägga completed för sig vid click
 
-// Ändra list item om en uppgift är klar eller inte? (list-style-type)
+// Ändra list item om en uppgift är klar eller inte? (list-style-type) (none = ingen punkt, ingenting)
 
 // Lägg till en progress bar för att visualisera hur mycket en har kvar
 
 // Länk till GTD eller Eisenhower metoden -- inspiration från bägge
 
 // Inkludera en 25 min timer och länka till pomodoro?
+
+// Skuggning bakom boxar
+
+// container border dotted, dashed, solid etc?
