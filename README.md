@@ -1,3 +1,1 @@
-# lsd-introkurs
-
-Uppgifter från introkursen i webbutveckling.
+# Learnia SysDev intro assignments
